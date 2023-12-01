@@ -1,6 +1,6 @@
-<mxfile host="app.diagrams.net" modified="2023-12-01T03:46:44.123Z" agent="Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/119.0.0.0 Safari/537.36" etag="2ucko9_e26ok92XKM8F_" version="22.1.5" type="github">
+<mxfile host="app.diagrams.net" modified="2023-12-01T04:03:27.754Z" agent="Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/119.0.0.0 Safari/537.36" etag="a_nkmJfDf5o52gBuXcab" version="22.1.5" type="github">
   <diagram id="C5RBs43oDa-KdzZeNtuy" name="Page-1">
-    <mxGraphModel dx="4007" dy="2942" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="827" pageHeight="1169" math="0" shadow="0">
+    <mxGraphModel dx="2190" dy="1929" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="827" pageHeight="1169" math="0" shadow="0">
       <root>
         <mxCell id="WIyWlLk6GJQsqaUBKTNV-0" />
         <mxCell id="WIyWlLk6GJQsqaUBKTNV-1" parent="WIyWlLk6GJQsqaUBKTNV-0" />
@@ -190,7 +190,7 @@
         <mxCell id="hVBE4-v0_V8PISyGows--46" value="if you delete Lot, Spot also deleted but not vice versa" style="rounded=0;whiteSpace=wrap;html=1;fillColor=#fff2cc;strokeColor=#d6b656;" parent="WIyWlLk6GJQsqaUBKTNV-1" vertex="1">
           <mxGeometry x="200" y="590" width="90" height="60" as="geometry" />
         </mxCell>
-        <mxCell id="hVBE4-v0_V8PISyGows--49" value="This one is good example of using abstract class. It Doesnt violate Listov substitution principle. We can replace object of 2w/4w with abstract one.&lt;br&gt;But we cannot do that with ParkingLot abstract design, As we need access to entrance, spots etc and they diff in each subclass. This is design con that needs to be addressed.&amp;nbsp;" style="rounded=0;whiteSpace=wrap;html=1;fillColor=#fff2cc;strokeColor=#d6b656;" parent="WIyWlLk6GJQsqaUBKTNV-1" vertex="1">
+        <mxCell id="hVBE4-v0_V8PISyGows--49" value="This one is good example of using abstract class. It Doesnt violate Listov substitution principle. We can replace object of 2w/4w with abstract one.&lt;br&gt;But we cannot do that with ParkingLot abstract design, As we need access to entrance, spots etc and they diff in each subclass. This is design con that needs to be addressed.&amp;nbsp;" style="rounded=0;whiteSpace=wrap;html=1;fillColor=#f8cecc;strokeColor=#b85450;" parent="WIyWlLk6GJQsqaUBKTNV-1" vertex="1">
           <mxGeometry x="-590" y="949" width="280" height="121" as="geometry" />
         </mxCell>
         <mxCell id="hVBE4-v0_V8PISyGows--50" value="For Cost only we created separate class,but its imp as otherwise would result in conditionals on type.&lt;br&gt;Open Closed principle Adherance&amp;nbsp;" style="rounded=0;whiteSpace=wrap;html=1;fillColor=#fff2cc;strokeColor=#d6b656;" parent="WIyWlLk6GJQsqaUBKTNV-1" vertex="1">
@@ -518,7 +518,7 @@
           <mxGeometry relative="1" as="geometry" />
         </mxCell>
         <mxCell id="1Z_w2MC2heHU-wcrS2rl-38" value="even tho subclass had own private methods.&lt;br&gt;It doesn&#39;t need to accessed outside so its okay.&lt;br&gt;Doesn&#39;t violate listov substitution principle" style="rounded=0;whiteSpace=wrap;html=1;fillColor=#fff2cc;strokeColor=#d6b656;" vertex="1" parent="WIyWlLk6GJQsqaUBKTNV-1">
-          <mxGeometry x="650" y="-420" width="270" height="60" as="geometry" />
+          <mxGeometry x="640" y="-480" width="270" height="60" as="geometry" />
         </mxCell>
         <mxCell id="1Z_w2MC2heHU-wcrS2rl-41" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;entryX=1;entryY=0.25;entryDx=0;entryDy=0;endArrow=block;endFill=0;" edge="1" parent="WIyWlLk6GJQsqaUBKTNV-1" source="1Z_w2MC2heHU-wcrS2rl-39" target="1Z_w2MC2heHU-wcrS2rl-15">
           <mxGeometry relative="1" as="geometry" />
@@ -586,6 +586,9 @@
         </mxCell>
         <mxCell id="1Z_w2MC2heHU-wcrS2rl-62" value="" style="line;html=1;strokeWidth=1;align=left;verticalAlign=middle;spacingTop=-1;spacingLeft=3;spacingRight=3;rotatable=0;labelPosition=right;points=[];portConstraint=eastwest;" vertex="1" parent="1Z_w2MC2heHU-wcrS2rl-59">
           <mxGeometry y="182" width="190" height="8" as="geometry" />
+        </mxCell>
+        <mxCell id="1Z_w2MC2heHU-wcrS2rl-73" value="but it create issue in intializing of strategy.&lt;br&gt;i.e in Factory like creation method.&lt;br&gt;-NTE need parking spots and entrance&lt;br&gt;-NTEE need parking spots, entrance and elevator&lt;br&gt;-NTEs need parking spots and entranceS" style="rounded=0;whiteSpace=wrap;html=1;fillColor=#f8cecc;strokeColor=#b85450;" vertex="1" parent="WIyWlLk6GJQsqaUBKTNV-1">
+          <mxGeometry x="630" y="-400" width="270" height="80" as="geometry" />
         </mxCell>
       </root>
     </mxGraphModel>
